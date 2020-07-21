@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Quarkus" url="file://$PROJECT_DIR$/../../code-with-quarkus" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/../../covid-19/mongodb-populator" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/../../dg8-embedded-quarkus" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../../code-with-quarkus/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../Emergency-Response-Demo/mission-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../../jdg-/pom.xml" />
+        <option value="$PROJECT_DIR$/../../jcache-quarkus/pom.xml" />
+        <option value="$PROJECT_DIR$/../../dg8-vertx-scorecard/pom.xml" />
+        <option value="$PROJECT_DIR$/../../springboot-remote-session-rhdg/pom.xml" />
+        <option value="$PROJECT_DIR$/../../jdg-exercises/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../../../Emergency-Response-Demo/mission-service/jdg-vertx-example/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

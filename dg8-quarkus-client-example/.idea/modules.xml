@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../code-with-quarkus/code-with-quarkus.iml" filepath="$PROJECT_DIR$/../../code-with-quarkus/code-with-quarkus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../dg8-embedded-quarkus/dg8-embedded-quarkus.iml" filepath="$PROJECT_DIR$/../../dg8-embedded-quarkus/dg8-embedded-quarkus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dg8-quarkus-client-example.iml" filepath="$PROJECT_DIR$/dg8-quarkus-client-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../dg8-vertx-scorecard/dg8-vertx-scorecard.iml" filepath="$PROJECT_DIR$/../../dg8-vertx-scorecard/dg8-vertx-scorecard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../dg8-exercises/jdg-exercises.iml" filepath="$PROJECT_DIR$/../../dg8-exercises/jdg-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../Emergency-Response-Demo/mission-service/mission-service.iml" filepath="$PROJECT_DIR$/../../../Emergency-Response-Demo/mission-service/mission-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-json-quickstart.iml" filepath="$PROJECT_DIR$/rest-json-quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../springboot-remote-session-rhdg/rhdg.iml" filepath="$PROJECT_DIR$/../../springboot-remote-session-rhdg/rhdg.iml" />
+    </modules>
+  </component>
+</project>

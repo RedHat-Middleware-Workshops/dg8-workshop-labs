@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.vertx:vertx-rx-java2:3.6.3.redhat-00012">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-rx-java2/3.6.3.redhat-00012/vertx-rx-java2-3.6.3.redhat-00012.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-rx-java2/3.6.3.redhat-00012/vertx-rx-java2-3.6.3.redhat-00012-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/vertx/vertx-rx-java2/3.6.3.redhat-00012/vertx-rx-java2-3.6.3.redhat-00012-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
