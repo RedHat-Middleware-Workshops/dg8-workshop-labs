@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.redhat.com</groupId>
-	<artifactId>rhdg</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>ext-rhdg</name>
-	<description>Spring Boot Session with RHDG Tutorial</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.redhat.com</groupId>
+    <artifactId>rhdg</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>ext-rhdg</name>
+    <description>Spring Boot Session with RHDG Tutorial</description>
 
-	<properties>
+    <properties>
         <version.spring.boot>2.2.5.RELEASE</version.spring.boot>
         <version.spring.session>2.2.2.RELEASE</version.spring.session>
         <version.infinispan>10.1.5.Final-redhat-00001</version.infinispan>
     </properties>
 
-	<dependencyManagement>
+    <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.infinispan</groupId>
@@ -24,29 +23,29 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-               <groupId>javax.transaction</groupId>
-               <artifactId>transaction-api</artifactId>
-               <version>1.1</version>
-           </dependency>
-           <dependency>
-               <groupId>javax.cache</groupId>
-               <artifactId>cache-api</artifactId>
-               <version>1.1.0.redhat-1</version>
-           </dependency>
+                <groupId>javax.transaction</groupId>
+                <artifactId>transaction-api</artifactId>
+                <version>1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.cache</groupId>
+                <artifactId>cache-api</artifactId>
+                <version>1.1.0.redhat-1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
-	<dependencies>
+    <dependencies>
         <dependency>
             <groupId>org.infinispan</groupId>
             <artifactId>infinispan-spring-boot-starter-embedded</artifactId>
             <version>2.2.3.Final-redhat-00001</version>
         </dependency>
-		<dependency>
-			<groupId>org.infinispan</groupId>
-			<artifactId>infinispan-spring-boot-starter-remote</artifactId>
-			<version>2.2.3.Final-redhat-00001</version>
-		</dependency>
+        <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-spring-boot-starter-remote</artifactId>
+            <version>2.2.3.Final-redhat-00001</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-core</artifactId>
@@ -74,7 +73,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <version>1.6.0</version>
+                    <version>3.0.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -96,13 +95,13 @@
                 <artifactId>project-sources-maven-plugin</artifactId>
                 <version>1.0</version>
                 <executions>
-                <execution>
-                    <id>project-sources-archive</id>
-                    <phase>initialize</phase>
-                    <goals>
-                    <goal>archive</goal>
-                    </goals>
-                </execution>
+                    <execution>
+                        <id>project-sources-archive</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>archive</goal>
+                        </goals>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
