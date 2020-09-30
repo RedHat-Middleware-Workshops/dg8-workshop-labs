@@ -1,34 +1,42 @@
 package org.acme;
 
+import org.infinispan.protostream.annotations.ProtoFactory;
+import org.infinispan.protostream.annotations.ProtoField;
+
 public class Score {
 
     // The number of holes played per round
     public static final int HOLES = 18;
 
     // The players currentHole
-    private int currentHole = 0;
+    @ProtoField(number = 1, defaultValue = "0")
+    int currentHole = 0;
 
     // Name of the player
-    private String playerName;
+    @ProtoField(number = 2)
+    String playerName;
 
     // players unique Id
-    private String playerId;
+    @ProtoField(number = 3)
+    String playerId;
 
     // The actual scoreCard
-    private int[] card = new int[HOLES];
+    int[] card = new int[HOLES];
 
     // The course player is playing on.
-    private String course = "St.Andrews Links";
+    @ProtoField(number = 4)
+    String course = "St.Andrews Links";
 
     // the courseCard; the expected handicap
-    private int[] courseCard = {4,4,4,4,5,4,4,3,4,4,3,4,4,5,4,4,4,4};
+    @ProtoField(number = 5)
+    int[] courseCard = {4,4,4,4,5,4,4,3,4,4,3,4,4,5,4,4,4,4};
 
     // Used with Json serialization
     public Score() {
     }
 
-
-    public Score(String playerName, String playerId, String course, int[] courseCard) {
+    @ProtoFactory
+    public Score(String playerName, String playerId, String course, int[] courseCard, int currentHole) {
         if(playerName == null || playerName.equals(""))
             throw new IllegalArgumentException("Player name cannot be null "+playerName);
         else {
@@ -36,6 +44,7 @@ public class Score {
             this.playerId = playerId;
             this.course = course;
             this.courseCard = courseCard;
+            this.currentHole = currentHole;
         }
     }
 
@@ -93,7 +102,16 @@ public class Score {
         this.playerName = playerName;
     }
 
-    public int[] getCard() {
+    public int[] getCourseCard() {
+        return courseCard;
+    }
+
+    public void setCourseCard(int[] courseCard) {
+        this.courseCard = courseCard;
+
+    }
+
+        public int[] getCard() {
         return card;
     }
 
