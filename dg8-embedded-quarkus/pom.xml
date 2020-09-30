@@ -43,6 +43,10 @@
       <artifactId>quarkus-infinispan-embedded</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.infinispan.protostream</groupId>
+      <artifactId>protostream-processor</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-openshift</artifactId>
     </dependency>
