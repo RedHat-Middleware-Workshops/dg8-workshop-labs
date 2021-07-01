@@ -1,0 +1,3 @@
+[submodule "infinispan-server-tutorial"]
+	path = infinispan-server-tutorial
+	url = https://github.com/sshaaf/infinispan-server-tutorial.git

@@ -1,7 +1,6 @@
 package org.acme.rest.json;
 
 import io.quarkus.infinispan.client.Remote;
-import io.reactivex.Observable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.infinispan.client.hotrod.RemoteCache;
