@@ -12,13 +12,13 @@ taking advantage of the mapping between Protobuf and JSON present in Infinispan
 
 ## Running 
 
-* Start Infinispan 10.0:
+* Start Infinispan 12.1:
 
-  ```docker run -it --name infinispan-server -p 11222:11222 -e "USER=user" -e "PASS=user" infinispan/server:10.0.1.Final```
+  ```docker run -it --name infinispan-server -p 11222:11222 -e "USER=admin" -e "PASS=password" infinispan/server:12.1.7.Final```
 
 * Register the protobuf schema
   
-  ```curl -u developer:NdFINF2E3CmRMbN3 -X POST --data-binary @./pokemon.proto $EP/rest/v2/caches/___protobuf_metadata/pokemon.proto```
+  ```curl -u developer:NdFINF2E3CmRMbN3 -X POST --data-binary @./pokemon.proto $EP/rest/v2/schemas/pokemon.proto```
 
 * Prepare data
 
@@ -26,7 +26,7 @@ taking advantage of the mapping between Protobuf and JSON present in Infinispan
   
 * Creating an indexed cache
 
-  ``` curl -u developer:NdFINF2E3CmRMbN3 -H "Content-Type: application/json" -d '{"distributed-cache":{"mode":"SYNC","indexing":{"auto-config":true,"index":"ALL"}}}' $EP/rest/v2/caches/pokemon ```
+  ``` curl -u developer:NdFINF2E3CmRMbN3 -H "Content-Type: application/json" -d '{"distributed-cache": {"mode": "SYNC","encoding": {"media-type": "application/x-protostream"},"indexing": {"indexed-entities": ["Pokemon"],"enabled": true},"statistics": true}}' $EP/rest/v2/caches/pokemon```
 
 * Ingest data
 
